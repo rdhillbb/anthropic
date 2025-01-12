@@ -7,7 +7,7 @@ import (
     "fmt"
     "io/ioutil"
     "net/http"
-    "anthropic/logging"
+    "github.com/rdhillbb/anthropic/logging"
 )
 
 // Package-level logging control functions allow users to enable/disable logging
