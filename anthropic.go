@@ -7,7 +7,7 @@ import (
     "fmt"
     "io/ioutil"
     "net/http"
-    "./logging"
+    "github.com/rdhillbb/logging"
 )
 
 // Package-level logging control functions allow users to enable/disable logging
