@@ -54,6 +54,11 @@ const (
     ToolChoiceTool = "tool"
 )
 
+type ToolChoice struct {
+    Type            string `json:"type"`
+    Name            string `json:"name,omitempty"`
+    DisableParallel bool   `json:"disable_parallel_tool_use,omitempty"`
+}
 // ClientOption defines functions that can modify client configuration
 type ClientOption func(*AnthropicClient)
 
@@ -137,11 +142,12 @@ type Property struct {
     Enum        []string `json:"enum,omitempty"`
 }
 
+/*
 type ToolChoice struct {
     Type string `json:"type"`
     Name string `json:"name,omitempty"`
 }
-
+*/
 // Response types
 type AnthropicResponse struct {
     ID          string           `json:"id"`

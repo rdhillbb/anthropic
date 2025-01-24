@@ -5,7 +5,7 @@ import (
     "context"
     "encoding/json"
     "github.com/rdhillbb/gotavilysearch"
-    "anthropic"
+    "github.com/rdhillbb/anthropic"
 )
 
 // GetWeather returns the weather tool definition using Anthropic types
